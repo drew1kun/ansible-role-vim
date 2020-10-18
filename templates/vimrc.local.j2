@@ -28,6 +28,9 @@ if &t_Co >= 256 || has("gui_running")
 {% if not 'nord' in vim_colorscheme %}
     "colorscheme nord
 {% endif %}
+{% if not 'cipherpunk' in vim_colorscheme %}
+    "colorscheme cipherpunk
+{% endif %}
 endif
 
 if &t_Co > 2 || has("gui_running") && !exists("syntax_on")

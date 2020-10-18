@@ -4,20 +4,20 @@
 # remove all vim configuration customizations created by this role
 vim_cleanup: no
 
-# where to install vim config: 'system' | ('user'|'users')
-vim_env: users
+# where to install vim config: 'system' | 'user'
+vim_env: user
 
 # system-wide vundle plugin installation can only be stored in /root/.vim, so
 # user-specific configuration is possible, but
 # only if system-wide configuration is NOT planned to be used on this system
 # For non-root users it is possible to use both system-wide and user configurations
 vim_users:
-- user
+- "{{ ansible_user_id }}"
 
 vim_neovim: yes
 
-# mustang, solarized, nord...
-vim_colorscheme: mustang
+# mustang, solarized, nord, cipherpunk...
+vim_colorscheme: solarized
 
 vim_plugin_manager: plug  # 'vundle' or 'plug'
 
@@ -38,11 +38,8 @@ vim_plugins:
 - { name: 'vim-airline/vim-airline-themes' } # vim-airline theme collection
 - { name: 'edkolev/tmuxline.vim' }           # tmux status line generator with vim-airline integration
 - { name: 'junegunn/vim-emoji' }             # EMOJI
-#- { name: 'mhinz/vim-signify' }              # Fast alternative to slow 'airblade/vim-gitgutter' (show git signatures)
-#- { name: 'vim-syntastic/syntastic' }        # Syntax Checker for different filetypes (airline integration)
-#- { name: 'ryanoasis/vim-devicons' }         # Add icons to plugins (Must be loaded after all other plugins in .vimrc)
-#- { name: 'wincent/command-t' }              # Fast "fuzzy" engine for switching buffers, searching etc.
-#- { name: 'ctrlpvim/ctrlp.vim' }             # Alternative to command-t (heavy - a lot of features, airline intergration)
+- { name: 'junegunn/fzf', opts: "'dir': '~/.fzf', 'do': './install --all', 'on': ['Files']" }
+- { name: 'junegunn/fzf.vim', opts: "'on': ['Files']" }
 
 vim_emoji_git_integration: no  # Itegrate emoji with gitgutter or signify (some people don't like the look)
 ...

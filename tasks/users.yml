@@ -104,7 +104,10 @@
   when: vim_users is defined
   become: yes
   become_user: "{{ item }}"
+#  vars:
+#    ansible_python_interpreter: '/usr/local/bin/python3'
   tags: vim
+
 
 - name: '[user] Set EDITOR and TERM environment variables'
   blockinfile:

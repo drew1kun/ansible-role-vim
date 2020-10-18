@@ -1,9 +1,12 @@
 ---
 # Both Plug and Vundle need git for plugins installation
-- name: '[dependencies] Non-MacOS: Install git and CTags'
+- name: '[dependencies] Non-MacOS: Install git, ag, ripgrep and CTags'
   package:
     name:
+    - fzf
     - git
+    - ripgrep
+    - silversearcher-ag
     - exuberant-ctags
     state: present
   become: yes
@@ -14,10 +17,13 @@
   - vim
   - vim_dependencies
 
-- name: '[dependencies] MacOS: Install git'
+- name: '[dependencies] MacOS: Install git, ag, ripgrep'
   homebrew:
     name:
+    - ag
+    - fzf
     - git
+    - ripgrep
     state: present
   become: no
   register: vim_dep_result

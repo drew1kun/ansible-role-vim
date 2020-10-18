@@ -24,13 +24,21 @@ let g:airline#extensions#ale#enabled = 1              " Set this. Airline will h
 """ THEMES:
 let g:airline_theme='{{ 'solarized_custom' if 'solarized' in vim_colorscheme
 else 'nord' if 'nord' in vim_colorscheme
+else 'desertink' if 'mustang' in vim_colorscheme
+else 'cipherpunk' if 'cipherpunk' in vim_colorscheme
 else 'powerlineish' }}'
-{% if not 'nord' in vim_colorscheme %}
-"let g:airline_theme='nord'
-{% elif not 'solarized' in vim_colorscheme %}
+{% if not 'solarized' in vim_colorscheme %}
 "let g:airline_theme='solarized_custom'
 {% endif %}
-"let g:airline_theme='solarized'
+{% if not 'nord' in vim_colorscheme %}
+"let g:airline_theme='nord'
+{% endif %}
+{% if not 'mustang' in vim_colorscheme %}
+"let g:airline_theme='desertink_custom'  "Suits for mustang vim theme
+{% endif %}
+{% if not 'cipherpunk' in vim_colorscheme %}
+"let g:airline_theme='cipherpunk'
+{% endif %}
 
 " To change theme temporarily run :AirlineTheme <tab>
 
