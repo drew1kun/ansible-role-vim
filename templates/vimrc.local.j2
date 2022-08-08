@@ -138,7 +138,8 @@ autocmd BufWritePre * call StripTrailingWhitespace()
 "================================ BREAK LINES ==================================
 let &showbreak = '↳ '               " Symbol shown on the left when long line is broken into multiple lines
 set wrap                            " Show long lines as multiple lines (for gpg, ssh keys etc.)
-set cpoptions=n
+"set cpoptions=n                    " Shift '↳ ' break symbol to the left, to the number column.
+" produces 'r' instead of new line when pressing Enter if vim-endwise plugin is enabled
 "===============================================================================
 
 "============================= DEFAULT CODE STYLE ==============================
