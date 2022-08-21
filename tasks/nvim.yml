@@ -28,4 +28,8 @@
   #- { src: "{{ vim_root_config }}", dest: '~/.vim/init.vim' }
   when: "'user' in vim_env"
   tags: vim
+
+- name: Install bottle python package
+  ansible.builtin.pip:
+    name: pynvim
 ...
