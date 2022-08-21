@@ -29,7 +29,7 @@
   when: "'user' in vim_env"
   tags: vim
 
-- name: Install bottle python package
+- name: '[nvim] Install pynvim python package for nvim to support python'
   ansible.builtin.pip:
     name: pynvim
 ...
