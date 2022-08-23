@@ -20,4 +20,3 @@
     path: /usr/bin/vim.nox
   become: yes
   tags: vim
-...

@@ -32,4 +32,3 @@
 - name: '[nvim] Install pynvim python package for nvim to support python'
   ansible.builtin.pip:
     name: pynvim
-...

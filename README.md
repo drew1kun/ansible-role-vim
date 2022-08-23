@@ -95,7 +95,7 @@ Example Playbook
 - hosts: macbooks
   gather_facts: yes
   roles:
-  - role: drew-kun.vim
+  - role: drew1kun.vim
     vim_cleanup: yes
     vim_env: users
     vim_plugin_manager: plug
@@ -117,6 +117,6 @@ Author Information
 Andrew Shagayev | [e-mail](mailto:drewshg@gmail.com)
 
 [role-badge]: https://img.shields.io/badge/role-drew--kun.vim-green.svg
-[galaxy-link]: https://galaxy.ansible.com/drew-kun/vim/
+[galaxy-link]: https://galaxy.ansible.com/drew1kun/vim/
 [mit-badge]: https://img.shields.io/badge/license-MIT-blue.svg
-[mit-link]: https://raw.githubusercontent.com/drew-kun/ansible-vim/master/LICENSE
+[mit-link]: https://raw.githubusercontent.com/drew1kun/ansible-vim/master/LICENSE

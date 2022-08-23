@@ -42,4 +42,3 @@ vim_plugins:
 - { name: 'junegunn/fzf.vim', opts: "'on': ['Files']" }
 
 vim_emoji_git_integration: no  # Itegrate emoji with gitgutter or signify (some people don't like the look)
-...

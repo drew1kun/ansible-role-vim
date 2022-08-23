@@ -2,4 +2,3 @@
 vim_root_config: "~/.vim/vimrc"  # symlinks this to ~/.vimrc
 vim_root_cust_conf_dir: "~/.vim/vim.local"
 vim_root_local_config: "{{ vim_root_cust_conf_dir }}/vimrc.local"
-...

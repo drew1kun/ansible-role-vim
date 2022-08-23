@@ -26,4 +26,3 @@
   become: yes
   when: "'system' in vim_env"
   tags: vim
-...

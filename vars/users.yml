@@ -19,4 +19,3 @@ vim_checklist:
 - { src: vimrc.devicons.j2, path: "{{ vim_root_conf_plug_dir }}/vimrc.devicons", name: 'devicons' }
 - { src: vimrc.commentary.j2, path: "{{ vim_root_conf_plug_dir }}/vimrc.commentary", name: 'commentary' }
 - { src: vimrc.asyncomplete.j2, path: "{{ vim_root_conf_plug_dir }}/vimrc.asyncomplete", name: 'asyncomplete.vim' }
-...

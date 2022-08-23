@@ -73,4 +73,3 @@
 - name: "[system] Include {{ vim_plugin_manager }} plugin manager and plugins installation tasks"
   include_tasks: "{{ vim_plugin_manager }}.yml"
   tags: vim
-...
