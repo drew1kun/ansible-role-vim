@@ -2,7 +2,7 @@
 galaxy_info:
   role_name: vim
   author: Andrew Shagayev
-  description: Ansible role that installs and configures vim | neovim \
+  description: Ansible role that installs and configures vim | neovim
     with plugin managers plug | vundle with a set of preconfigured plugins and themes
   license: MIT
   min_ansible_version: 1.9
