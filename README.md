@@ -3,6 +3,15 @@
 [![MIT licensed][mit-badge]][mit-link]
 [![Galaxy Role][role-badge]][galaxy-link]
 
+DEPRECATION NOTICE
+----
+This role is being deprecated in favor of [ansible-collection-slickshell][slickshell-github-link].
+
+Collection on Galaxy: [drew1kun.slickshell][slickshell-galaxy-link]
+
+Description
+----
+
 Ansible role that installs, configures and customizes vim editor.
 
 The role does the following:
@@ -44,15 +53,14 @@ installation and uncomment it for per-user installation.
 
 ### Use case #2: install for a single user
 
-  You want to use this ansible role to provision your own laptop and just want a customized vim for your user. All your
-  config lives in your `$HOME` path, just like regular vim install.
+  You want to use this ansible role to provision your own laptop and just want a customized vim for your user.
+  All your config lives in your `$HOME` path, just like regular vim install.
 
   Set `vim_env` variable to `user` in your playbook and set `vim_users` variable with a list of users to install vim.
 
   The common config is placed in `~/vimrc` (for settings) and `~/vimrc.bundles` (for plugins).
 
-  If you need to overwrite any setting or install new plugins for a selected user, you need to put your settings in
-  these files: `~/.vimrc.local` and `~/.vimrc.bundles.local`
+  If you need to overwrite any setting or install new plugins for a selected user, you need to put your settings in these files: `~/.vimrc.local` and `~/.vimrc.bundles.local`
 
   Refer to [Vundle documentation][vundle-link] for plugin management.
 
@@ -122,3 +130,5 @@ Andrew Shagayev | [e-mail](mailto:drewshg@gmail.com)
 [solarized-link]: https://github.com/altercation/vim-colors-solarized#important-note-for-terminal-users
 [mustang-link]: https://hcalves.deviantart.com/art/Mustang-Vim-Colorscheme-98974484
 [emoji-link]: https://github.com/junegunn/vim-emoji
+[slickshell-github-link]:https://github.com/drew1kun/ansible-collection-slickshell
+[slickshell-galaxy-link]:https://galaxy.ansible.com/drew1kun/slickshell
