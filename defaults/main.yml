@@ -2,7 +2,7 @@
 # defaults file for expandfs
 
 # remove all vim configuration customizations created by this role
-vim_cleanup: no
+vim_cleanup: false
 
 # where to install vim config: 'system' | 'user'
 vim_env: user
@@ -14,7 +14,7 @@ vim_env: user
 vim_users:
 - "{{ ansible_user_id }}"
 
-vim_neovim: yes
+vim_neovim: true
 
 # mustang, solarized, nord, cipherpunk...
 vim_colorscheme: solarized
@@ -41,4 +41,4 @@ vim_plugins:
 - { name: 'junegunn/fzf', opts: "'dir': '~/.fzf', 'do': './install --all', 'on': ['Files']" }
 - { name: 'junegunn/fzf.vim', opts: "'on': ['Files']" }
 
-vim_emoji_git_integration: no  # Itegrate emoji with gitgutter or signify (some people don't like the look)
+vim_emoji_git_integration: false  # Itegrate emoji with gitgutter or signify (some people don't like the look)
